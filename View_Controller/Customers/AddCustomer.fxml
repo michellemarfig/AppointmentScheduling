@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.Customers.AddCustomer_Controller">
+   <children>
+      <Label layoutX="236.0" layoutY="14.0" text="Add a Customer" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <HBox layoutX="107.0" layoutY="59.0" prefHeight="149.0" prefWidth="360.0">
+         <children>
+            <VBox prefHeight="218.0" prefWidth="129.0">
+               <children>
+                  <Label text="CustomerID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Separator prefHeight="5.0" prefWidth="120.0" />
+                  <Label text="Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Separator prefHeight="5.0" prefWidth="129.0" />
+                  <Label text="Address" textAlignment="RIGHT">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Separator prefHeight="5.0" prefWidth="129.0" />
+                  <Label text="Postal Code">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Separator prefWidth="200.0" />
+                  <Label text="Phone">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Separator prefWidth="200.0" />
+                  <Label prefWidth="90.0" text="Country">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Separator prefHeight="3.0" prefWidth="120.0" />
+                  <Label text="Division ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="218.0" prefWidth="250.0">
+               <children>
+                  <TextField fx:id="idTxt" />
+                  <TextField fx:id="nameTxt" />
+                  <TextField fx:id="addressTxt" />
+                  <TextField fx:id="postalTxt" />
+                  <TextField fx:id="phoneTxt" />
+                  <ComboBox fx:id="countryCombo" onAction="#setDivisionCombo" prefHeight="25.0" prefWidth="241.0" />
+                  <ComboBox fx:id="divisionCombo" prefHeight="25.0" prefWidth="241.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button layoutX="236.0" layoutY="259.0" mnemonicParsing="false" onAction="#goToMain" text="Cancel" />
+      <Button layoutX="413.0" layoutY="259.0" mnemonicParsing="false" onAction="#save" text="Save" />
+   </children>
+</AnchorPane>

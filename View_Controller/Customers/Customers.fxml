@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="443.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.Customers.Customers_Controller">
+    <children>
+
+      <VBox layoutX="41.0" layoutY="85.0" prefHeight="286.0" prefWidth="744.0">
+         <children>
+            <TableView fx:id="table" prefHeight="261.0" prefWidth="602.0">
+              <columns>
+                <TableColumn prefWidth="161.0" text="Name"> <cellValueFactory> <PropertyValueFactory property="Customer_Name" /> </cellValueFactory> </TableColumn>
+                <TableColumn minWidth="3.20001220703125" prefWidth="168.0" text="Address"> <cellValueFactory> <PropertyValueFactory property="Address" /> </cellValueFactory> </TableColumn>
+                  <TableColumn prefWidth="93.0" text="Postal Code"> <cellValueFactory> <PropertyValueFactory property="Postal_Code" /> </cellValueFactory> </TableColumn>
+                  <TableColumn minWidth="9.0" prefWidth="107.0" text="Phone Number"> <cellValueFactory> <PropertyValueFactory property="Phone" /> </cellValueFactory> </TableColumn>
+                  <TableColumn minWidth="9.0" prefWidth="107.0" text="Division ID"> <cellValueFactory> <PropertyValueFactory property="Division_ID" /> </cellValueFactory> </TableColumn>
+              </columns>
+            </TableView>
+            <HBox prefHeight="25.0" prefWidth="401.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goToAdd" prefHeight="25.0" prefWidth="52.0" text="Add" />
+                  <Separator orientation="VERTICAL" prefHeight="25.0" prefWidth="17.0" />
+                  <Button mnemonicParsing="false" onAction="#modify" prefHeight="25.0" prefWidth="52.0" text="Edit" />
+                  <Separator orientation="VERTICAL" prefHeight="25.0" prefWidth="16.0" />
+                  <Button mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="52.0" text="Delete" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+
+      <Button layoutX="41.0" layoutY="49.0" mnemonicParsing="false" onAction="#goHome" text="Go to Dashboard" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+
+      <Label layoutX="332.0" layoutY="14.0" text="Manage Customers" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+
+
+    </children>
+
+</AnchorPane>

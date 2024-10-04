@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.Login_Controller">
+   <children>
+      <Label fx:id="titleLbl" layoutX="211.0" layoutY="27.0" text="Scheduling System" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="UserTxt" layoutX="336.0" layoutY="117.0" />
+      <Label fx:id="userLbl" layoutX="132.0" layoutY="119.0" text="UserID:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="passLbl" layoutX="132.0" layoutY="159.0" text="Password:" textAlignment="RIGHT">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PassTxt" layoutX="336.0" layoutY="157.0" />
+      <Button fx:id="loginBtn" layoutX="276.0" layoutY="188.0" mnemonicParsing="false" onAction="#login" text="Login" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="zoneLbl" layoutX="254.0" layoutY="239.0" text="Zone ID:" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

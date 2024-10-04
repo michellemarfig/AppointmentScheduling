@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.Reports.Locations_Controller">
+   <children>
+      <Label layoutX="266.0" layoutY="23.0" text="Locations" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list" layoutX="200.0" layoutY="67.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="132.0" layoutY="302.0" mnemonicParsing="false" onAction="#getReports" text="Back To Reports" />
+      <Button layoutX="345.0" layoutY="302.0" mnemonicParsing="false" onAction="#goToDashboard" text="Go To Dashboard" />
+   </children>
+</AnchorPane>

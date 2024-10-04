@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="551.0" prefWidth="1094.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.Dashboard_Controller">
+   <children>
+      <Label fx:id="welcomeLbl" layoutX="53.0" layoutY="23.0" text="Welcome User!">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="994.0" layoutY="470.0" mnemonicParsing="false" onAction="#goToLogin" text="Logout">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <VBox layoutX="53.0" layoutY="61.0" prefHeight="384.0" prefWidth="999.0">
+         <children>
+            <HBox prefHeight="26.0" prefWidth="520.0">
+               <children>
+                  <Label prefHeight="37.0" prefWidth="134.0" text="Appointments" />
+                  <Separator orientation="VERTICAL" prefHeight="22.0" prefWidth="573.0" />
+                  <RadioButton mnemonicParsing="false" onAction="#viewAll" text="View All">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="ViewRadios" />
+                     </toggleGroup></RadioButton>
+                  <Separator orientation="VERTICAL" prefHeight="22.0" prefWidth="25.0" />
+                  <RadioButton mnemonicParsing="false" onAction="#weekly" text="View Weekly" toggleGroup="$ViewRadios" />
+                  <Separator orientation="VERTICAL" prefHeight="100.0" prefWidth="14.0" />
+                  <RadioButton mnemonicParsing="false" onAction="#monthly" text="View Monthly" toggleGroup="$ViewRadios" />
+               </children>
+            </HBox>
+            <TableView fx:id="table" prefHeight="333.0" prefWidth="999.0">
+              <columns>
+                <TableColumn fx:id="idCol" prefWidth="57.0" text="ID" />
+                <TableColumn fx:id="titleCol" prefWidth="114.19998168945312" text="Title" />
+                  <TableColumn fx:id="descCol" prefWidth="122.60002136230469" text="Description" />
+                  <TableColumn fx:id="locationCol" minWidth="1.0" prefWidth="81.0" text="Location" />
+                  <TableColumn fx:id="contactCol" prefWidth="95.0" text="Contact" />
+                  <TableColumn fx:id="typeCol" prefWidth="97.0" text="Type" />
+                  <TableColumn fx:id="startCol" prefWidth="112.0" text="Start" />
+                  <TableColumn fx:id="endCol" minWidth="7.0" prefWidth="111.0" text="End" />
+                  <TableColumn fx:id="custCol" minWidth="4.0" prefWidth="94.4000244140625" text="Customer ID" />
+                  <TableColumn fx:id="userCol" prefWidth="92.79986572265625" text="User ID" />
+              </columns>
+            </TableView>
+            <HBox prefHeight="37.0" prefWidth="677.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#add" text="New Appointment" />
+                  <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="57.0" />
+                  <Button mnemonicParsing="false" onAction="#modify" text="Edit Appointment" />
+                  <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="56.0" />
+                  <Button mnemonicParsing="false" onAction="#delete" text="Cancel Appointment" />
+                  <Separator orientation="VERTICAL" prefHeight="34.0" prefWidth="167.0" />
+                  <Button mnemonicParsing="false" onAction="#goToCustomers" prefHeight="26.0" prefWidth="170.0" text="Manage Customers" />
+                  <Separator orientation="VERTICAL" prefHeight="34.0" prefWidth="117.0" />
+                  <Button mnemonicParsing="false" onAction="#getReports" text="Get Reports" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
