@@ -1,6 +1,5 @@
 /**
  * @author Michelle Martinez-Figueroa
- * WGU Software II
  * July 27, 2021
  * Scheduling System Application
  */
