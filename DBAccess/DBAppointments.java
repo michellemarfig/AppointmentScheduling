@@ -1,10 +1,8 @@
 /**
  * @author Michelle Martinez-Figueroa
- * WGU Software II
  * August 8, 2021
  * Scheduling System Application
- */
-
+ **/
 package DBAccess;
 
 import DBQuery.DBQuery;
